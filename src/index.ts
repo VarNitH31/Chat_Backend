@@ -63,7 +63,8 @@ wss.on("connection",(socket)=>{
                     // allSockets[i].socket.send(`${parsedMessage.payload}`)
                     allSockets[i].socket.send(JSON.stringify({
                         message:parsedMessage.payload.message,
-                        userName:parsedMessage.payload.userName
+                        userName:parsedMessage.payload.userName,
+                        timestamp:parsedMessage.payload.timestamp
                     }))
                 }
                 

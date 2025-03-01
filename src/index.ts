@@ -1,6 +1,8 @@
 import { WebSocketServer , WebSocket} from "ws";
 
-const wss=new WebSocketServer({port:8080});
+const PORT = process.env.PORT || 8080;
+//@ts-ignore
+const wss = new WebSocketServer({ port: PORT });
 
 interface User{
     socket:WebSocket,

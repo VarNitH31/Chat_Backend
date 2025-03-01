@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc -b && node ./dist/index.js",
     "build": "npx tsc -b",
-    "prestart": "npm install && npm run build",
+    "prestart": "npm install --omit=optional && npm run build",
     "start": "node ./dist/index.js"
   },
   "keywords": [],

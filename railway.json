@@ -1,0 +1,8 @@
+{
+  "services": [
+    {
+      "name": "websockets",
+      "port": 8080
+    }
+  ]
+}
